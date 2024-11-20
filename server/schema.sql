@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS temperature_db;
+USE temperature_db;
+
+CREATE TABLE IF NOT EXISTS temperature_readings (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    temperature DECIMAL(5,2) NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
